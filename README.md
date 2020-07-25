@@ -10,8 +10,6 @@ My session at Android Stream Day about Superpower your Android Apps with ML, 8-9
 [Rivu Chakraborty](https://www.rivu.dev/).
 
 <!-- TODOs
-Intro
-Hosts
 Reviewers
 Poster
 Credits
