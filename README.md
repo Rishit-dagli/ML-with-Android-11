@@ -9,6 +9,14 @@
 My session at Android Stream Day about Superpower your Android Apps with ML, 8-9 August 2020. Special thanks to [Pawan Kumar](https://www.pawan.live/) and 
 [Rivu Chakraborty](https://www.rivu.dev/).
 
+Thanks to-
+
+* 
+* 
+* 
+
+who helped me in putting together the slides.
+
 <!-- TODOs
 Reviewers
 Poster
