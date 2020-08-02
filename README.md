@@ -17,6 +17,11 @@ Thanks to-
 
 who helped me in putting together the slides.
 
+  <details>
+  <summary>Credits</summary>
+  Poster designed by 
+  </details>
+
 <!-- TODOs
 Reviewers
 Poster
