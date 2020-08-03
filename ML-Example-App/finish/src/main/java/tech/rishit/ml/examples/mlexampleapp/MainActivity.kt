@@ -218,10 +218,10 @@ class MainActivity : AppCompatActivity() {
         ImageAnalysis.Analyzer {
 
         // TODO 6. Optional GPU acceleration
-        private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
+        //private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
 
         // TODO 1: Add class variable TensorFlow Lite Model
-        private val flowerModel = FlowerModel.newInstance(ctx, options)
+        private val flowerModel = FlowerModel.newInstance(ctx)
 
         override fun analyze(imageProxy: ImageProxy) {
 
