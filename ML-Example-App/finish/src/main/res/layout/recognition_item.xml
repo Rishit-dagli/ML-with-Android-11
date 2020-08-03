@@ -21,7 +21,7 @@
 
         <variable
             name="recognitionItem"
-            type="org.tensorflow.lite.examples.classification.viewmodel.Recognition" />
+            type="tech.rishit.ml.examples.mlexampleapp.viewmodel.Recognition" />
     </data>
 
     <LinearLayout
