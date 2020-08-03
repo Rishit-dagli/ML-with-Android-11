@@ -219,6 +219,8 @@ class MainActivity : AppCompatActivity() {
 
         //private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
 
+        // If using GPU, use
+//        private val flowerModel = FlowerModel.newInstance(ctx, options)
         private val flowerModel = FlowerModel.newInstance(ctx)
 
         override fun analyze(imageProxy: ImageProxy) {
