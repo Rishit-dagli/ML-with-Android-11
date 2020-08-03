@@ -81,7 +81,6 @@ dependencies {
     implementation "androidx.camera:camera-view:1.0.0-alpha11"
     implementation "androidx.activity:activity-ktx:1.1.0"
 
-    // TODO 5: Optional GPU Delegates
     implementation 'org.tensorflow:tensorflow-lite-gpu:2.2.0'
 
     testImplementation 'junit:junit:4.13'
