@@ -8,21 +8,21 @@
     android:keepScreenOn="true"
     android:orientation="vertical">
 
-  <tech.google.mlkit.vision.demo.CameraSourcePreview
+  <com.google.mlkit.vision.demo.CameraSourcePreview
       android:id="@+id/preview"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_alignParentLeft="true"
       android:layout_alignParentTop="true">
 
-    <tech.google.mlkit.vision.demo.GraphicOverlay
+    <com.google.mlkit.vision.demo.GraphicOverlay
         android:id="@+id/graphic_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"/>
-  </tech.google.mlkit.vision.demo.CameraSourcePreview>
+  </com.google.mlkit.vision.demo.CameraSourcePreview>
 
   <include
       layout="@layout/settings_style"

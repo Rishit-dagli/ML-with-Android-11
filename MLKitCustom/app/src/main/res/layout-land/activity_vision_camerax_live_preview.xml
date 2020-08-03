@@ -13,7 +13,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toStartOf="@+id/control"/>
 
-  <tech.google.mlkit.vision.demo.GraphicOverlay
+  <com.google.mlkit.vision.demo.GraphicOverlay
       android:id="@+id/graphic_overlay"
       android:layout_width="0dp"
       android:layout_height="match_parent"
