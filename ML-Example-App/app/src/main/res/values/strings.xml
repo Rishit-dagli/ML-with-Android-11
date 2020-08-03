@@ -15,6 +15,6 @@
   -->
 
 <resources>
-    <string name="app_name">TFL Classify</string>
+    <string name="app_name">Rock Paper Scissors</string>
     <string name="permission_deny_text">Required permissions denied. Exiting.</string>
 </resources>
