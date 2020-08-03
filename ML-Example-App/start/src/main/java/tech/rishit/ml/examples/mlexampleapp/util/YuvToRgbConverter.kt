@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.tensorflow.lite.examples.classification.util
+package tech.rishit.ml.examples.mlexampleapp.util
 
 import android.content.Context
 import android.graphics.Bitmap

@@ -34,7 +34,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TFLClassify"
         tools:ignore="AllowBackup">
-        <activity android:name=".MainActivity">
+        <activity android:name="tech.rishit.ml.examples.mlexampleapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
