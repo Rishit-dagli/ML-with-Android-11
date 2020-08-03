@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package tech.rishit.ml.examples.mlexampleapp.viewmodel
+package org.tensorflow.lite.examples.classification.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

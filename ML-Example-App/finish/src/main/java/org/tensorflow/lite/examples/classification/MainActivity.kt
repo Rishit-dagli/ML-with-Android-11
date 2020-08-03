@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package tech.rishit.ml.examples.mlexampleapp
+package org.tensorflow.lite.examples.classification
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -39,13 +39,14 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
-import org.tensorflow.lite.examples.classification.R
-import tech.rishit.ml.examples.mlexampleapp.ui.RecognitionAdapter
-import tech.rishit.ml.examples.mlexampleapp.util.YuvToRgbConverter
-import tech.rishit.ml.examples.mlexampleapp.viewmodel.Recognition
-import tech.rishit.ml.examples.mlexampleapp.viewmodel.RecognitionListViewModel
+import org.tensorflow.lite.examples.classification.ml.FlowerModel
+import org.tensorflow.lite.examples.classification.ui.RecognitionAdapter
+import org.tensorflow.lite.examples.classification.util.YuvToRgbConverter
+import org.tensorflow.lite.examples.classification.viewmodel.Recognition
+import org.tensorflow.lite.examples.classification.viewmodel.RecognitionListViewModel
+import org.tensorflow.lite.support.image.TensorImage
+import org.tensorflow.lite.support.model.Model
 import java.util.concurrent.Executors
-import kotlin.random.Random
 
 // Constants
 private const val MAX_RESULT_DISPLAY = 3 // Maximum number of results displayed
@@ -87,17 +88,12 @@ class MainActivity : AppCompatActivity() {
             startCamera()
         } else {
             ActivityCompat.requestPermissions(
-                this,
-                REQUIRED_PERMISSIONS,
-                REQUEST_CODE_PERMISSIONS
+                this, REQUIRED_PERMISSIONS, REQUEST_CODE_PERMISSIONS
             )
         }
 
         // Initialising the resultRecyclerView and its linked viewAdaptor
-        val viewAdapter =
-            RecognitionAdapter(
-                this
-            )
+        val viewAdapter = RecognitionAdapter(this)
         resultRecyclerView.adapter = viewAdapter
 
         // Disable recycler view animation to reduce flickering, otherwise items can move, fade in
@@ -179,13 +175,10 @@ class MainActivity : AppCompatActivity() {
                 .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                 .build()
                 .also { analysisUseCase: ImageAnalysis ->
-                    analysisUseCase.setAnalyzer(cameraExecutor,
-                        ImageAnalyzer(
-                            this
-                        ) { items ->
-                            // updating the list of recognised objects
-                            recogViewModel.updateData(items)
-                        })
+                    analysisUseCase.setAnalyzer(cameraExecutor, ImageAnalyzer(this) { items ->
+                        // updating the list of recognised objects
+                        recogViewModel.updateData(items)
+                    })
                 }
 
             // Select camera, back is the default. If it is not available, choose front camera
@@ -216,29 +209,34 @@ class MainActivity : AppCompatActivity() {
         ImageAnalysis.Analyzer {
 
         // TODO 6. Optional GPU acceleration
+        private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
 
         // TODO 1: Add class variable TensorFlow Lite Model
+        private val flowerModel = FlowerModel.newInstance(ctx, options)
 
         override fun analyze(imageProxy: ImageProxy) {
 
             val items = mutableListOf<Recognition>()
 
             // TODO 2: Convert Image to Bitmap then to TensorImage
+            val tfImage = TensorImage.fromBitmap(toBitmap(imageProxy))
 
             // TODO 3: Process the image using the trained model, sort and pick out the top results
+            val outputs = flowerModel.process(tfImage)
+                .probabilityAsCategoryList.apply {
+                    sortByDescending { it.score } // Sort with highest confidence first
+                }.take(MAX_RESULT_DISPLAY) // take the top results
 
             // TODO 4: Converting the top probability items into a list of recognitions
-
-            // START - Placeholder code at the start of the codelab. Comment this block of code out.
-            for (i in 0..MAX_RESULT_DISPLAY -1){
-                items.add(
-                    Recognition(
-                        "Fake label $i",
-                        Random.nextFloat()
-                    )
-                )
+            for (output in outputs) {
+                items.add(Recognition(output.label, output.score))
             }
-            // END - Placeholder code at the start of the codelab. Comment this block of code out.
+
+//            // START - Placeholder code at the start of the codelab. Comment this block of code out.
+//            for (i in 0..MAX_RESULT_DISPLAY-1){
+//                items.add(Recognition("Fake label $i", Random.nextFloat()))
+//            }
+//            // END - Placeholder code at the start of the codelab. Comment this block of code out.
 
             // Return the result
             listener(items.toList())
@@ -250,10 +248,7 @@ class MainActivity : AppCompatActivity() {
         /**
          * Convert Image Proxy to Bitmap
          */
-        private val yuvToRgbConverter =
-            YuvToRgbConverter(
-                ctx
-            )
+        private val yuvToRgbConverter = YuvToRgbConverter(ctx)
         private lateinit var bitmapBuffer: Bitmap
         private lateinit var rotationMatrix: Matrix
 

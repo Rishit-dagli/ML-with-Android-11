@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package tech.rishit.ml.examples.mlexampleapp.ui
+package org.tensorflow.lite.examples.classification.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -23,12 +23,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import org.tensorflow.lite.examples.classification.databinding.RecognitionItemBinding
-import tech.rishit.ml.examples.mlexampleapp.viewmodel.Recognition
+import org.tensorflow.lite.examples.classification.viewmodel.Recognition
 
 class RecognitionAdapter(private val ctx: Context) :
-    ListAdapter<Recognition, RecognitionViewHolder>(
-        RecognitionDiffUtil()
-    ) {
+    ListAdapter<Recognition, RecognitionViewHolder>(RecognitionDiffUtil()) {
 
     /**
      * Inflating the ViewHolder with recognition_item layout and data binding
@@ -36,9 +34,7 @@ class RecognitionAdapter(private val ctx: Context) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecognitionViewHolder {
         val inflater = LayoutInflater.from(ctx)
         val binding = RecognitionItemBinding.inflate(inflater, parent, false)
-        return RecognitionViewHolder(
-            binding
-        )
+        return RecognitionViewHolder(binding)
     }
 
     // Binding the data fields to the RecognitionViewHolder

@@ -26,7 +26,7 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
-        applicationId "tech.rishit.ml.examples.mlexampleapp"
+        applicationId "org.tensorflow.lite.examples.classification"
         minSdkVersion 21
         //noinspection OldTargetApi
         targetSdkVersion 29
