@@ -41,6 +41,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import org.tensorflow.lite.examples.classification.R
 import org.tensorflow.lite.examples.classification.ml.FlowerModel
+import org.tensorflow.lite.examples.classification.ml.RPSModel
 import tech.rishit.ml.examples.mlexampleapp.ui.RecognitionAdapter
 import tech.rishit.ml.examples.mlexampleapp.util.YuvToRgbConverter
 import tech.rishit.ml.examples.mlexampleapp.viewmodel.Recognition
@@ -221,7 +222,7 @@ class MainActivity : AppCompatActivity() {
 
         // If using GPU, use
 //        private val flowerModel = FlowerModel.newInstance(ctx, options)
-        private val flowerModel = FlowerModel.newInstance(ctx)
+        private val flowerModel = RPSModel.newInstance(ctx)
 
         override fun analyze(imageProxy: ImageProxy) {
 
