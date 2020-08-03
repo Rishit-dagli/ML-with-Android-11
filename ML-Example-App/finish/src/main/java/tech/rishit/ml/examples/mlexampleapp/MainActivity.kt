@@ -40,7 +40,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import org.tensorflow.lite.examples.classification.R
-import org.tensorflow.lite.examples.classification.ml.FlowerModel
+import org.tensorflow.lite.examples.classification.ml.rpsModel
 import org.tensorflow.lite.examples.classification.ml.RPSModel
 import tech.rishit.ml.examples.mlexampleapp.ui.RecognitionAdapter
 import tech.rishit.ml.examples.mlexampleapp.util.YuvToRgbConverter
@@ -221,8 +221,8 @@ class MainActivity : AppCompatActivity() {
         //private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
 
         // If using GPU, use
-//        private val flowerModel = FlowerModel.newInstance(ctx, options)
-        private val flowerModel = RPSModel.newInstance(ctx)
+//        private val rpsModel = rpsModel.newInstance(ctx, options)
+        private val rpsModel = RPSModel.newInstance(ctx)
 
         override fun analyze(imageProxy: ImageProxy) {
 
@@ -230,7 +230,7 @@ class MainActivity : AppCompatActivity() {
 
             val tfImage = TensorImage.fromBitmap(toBitmap(imageProxy))
 
-            val outputs = flowerModel.process(tfImage)
+            val outputs = rpsModel.process(tfImage)
                 .probabilityAsCategoryList.apply {
                     sortByDescending { it.score } // Sort with highest confidence first
                 }.take(MAX_RESULT_DISPLAY) // take the top results
