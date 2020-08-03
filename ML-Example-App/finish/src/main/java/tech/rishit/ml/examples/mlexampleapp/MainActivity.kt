@@ -28,11 +28,7 @@ import android.util.Size
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.camera.core.Camera
-import androidx.camera.core.CameraSelector
-import androidx.camera.core.ImageAnalysis
-import androidx.camera.core.ImageProxy
-import androidx.camera.core.Preview
+import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.core.app.ActivityCompat
@@ -40,14 +36,12 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import org.tensorflow.lite.examples.classification.R
-import org.tensorflow.lite.examples.classification.ml.rpsModel
 import org.tensorflow.lite.examples.classification.ml.RPSModel
+import org.tensorflow.lite.support.image.TensorImage
 import tech.rishit.ml.examples.mlexampleapp.ui.RecognitionAdapter
 import tech.rishit.ml.examples.mlexampleapp.util.YuvToRgbConverter
 import tech.rishit.ml.examples.mlexampleapp.viewmodel.Recognition
 import tech.rishit.ml.examples.mlexampleapp.viewmodel.RecognitionListViewModel
-import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.model.Model
 import java.util.concurrent.Executors
 
 // Constants
