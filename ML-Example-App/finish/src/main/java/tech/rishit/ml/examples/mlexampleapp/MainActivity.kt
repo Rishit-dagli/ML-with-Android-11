@@ -217,26 +217,21 @@ class MainActivity : AppCompatActivity() {
     private class ImageAnalyzer(ctx: Context, private val listener: RecognitionListener) :
         ImageAnalysis.Analyzer {
 
-        // TODO 6. Optional GPU acceleration
         //private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
 
-        // TODO 1: Add class variable TensorFlow Lite Model
         private val flowerModel = FlowerModel.newInstance(ctx)
 
         override fun analyze(imageProxy: ImageProxy) {
 
             val items = mutableListOf<Recognition>()
 
-            // TODO 2: Convert Image to Bitmap then to TensorImage
             val tfImage = TensorImage.fromBitmap(toBitmap(imageProxy))
 
-            // TODO 3: Process the image using the trained model, sort and pick out the top results
             val outputs = flowerModel.process(tfImage)
                 .probabilityAsCategoryList.apply {
                     sortByDescending { it.score } // Sort with highest confidence first
                 }.take(MAX_RESULT_DISPLAY) // take the top results
 
-            // TODO 4: Converting the top probability items into a list of recognitions
             for (output in outputs) {
                 items.add(
                     Recognition(
@@ -245,12 +240,6 @@ class MainActivity : AppCompatActivity() {
                     )
                 )
             }
-
-//            // START - Placeholder code at the start of the codelab. Comment this block of code out.
-//            for (i in 0..MAX_RESULT_DISPLAY-1){
-//                items.add(Recognition("Fake label $i", Random.nextFloat()))
-//            }
-//            // END - Placeholder code at the start of the codelab. Comment this block of code out.
 
             // Return the result
             listener(items.toList())
