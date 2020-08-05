@@ -11,15 +11,15 @@ My session at Android Stream Day about Superpower your Android Apps with ML, 8-9
 
 Special thanks to-
 
-* 
-* 
-* 
+* TODO
+* TODO
+* TODO
 
 who helped me in putting together the slides.
 
   <details>
   <summary>Credits</summary>
-  Poster designed by 
+  Poster designed by TODO
   </details>
 
 <!-- TODOs
