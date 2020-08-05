@@ -6,10 +6,10 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)
 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FAndroid-Stream-Day-2020)
 
-My session at Android Stream Day about Superpower your Android Apps with ML, 8-9 August 2020. Special thanks to [Pawan Kumar](https://www.pawan.live/) and 
-[Rivu Chakraborty](https://www.rivu.dev/).
+My session at Android Stream Day about Superpower your Android Apps with ML, 8-9 August 2020. Special thanks to [@iampawan](https://github.com/iampawan) and 
+[@RivuChk](https://github.com/RivuChk).
 
-Thanks to-
+Special thanks to-
 
 * 
 * 
