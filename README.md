@@ -14,9 +14,8 @@ My session at Android Stream Day about Superpower your Android Apps with ML, 8-9
 
 Special thanks to-
 
-* TODO
-* TODO
-* TODO
+* [@sayakpaul](https://github.com/sayakpaul)
+* [@khanhlvg](https://github.com/khanhlvg)
 
 who helped me in putting together the slides.
 
