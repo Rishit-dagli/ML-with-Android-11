@@ -18,8 +18,3 @@ Special thanks to-
 * [@khanhlvg](https://github.com/khanhlvg)
 
 who helped me in putting together the slides.
-
-  <details>
-  <summary>Credits</summary>
-  Poster designed by TODO
-  </details>
