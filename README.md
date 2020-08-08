@@ -19,6 +19,8 @@ Special thanks to-
 
 who helped me in putting together the slides.
 
+![](https://github.com/Rishit-dagli/Android-Stream-Day-2020/blob/master/images/asd-gif.gif)
+
 ## [Registration](https://www.eventbrite.com/e/android-stream-day-season-1-tickets-112068517954)
 
 ## [Schedule and further deatils](http://stream.mtechviral.com/)
