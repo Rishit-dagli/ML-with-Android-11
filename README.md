@@ -20,3 +20,9 @@ Special thanks to-
 who helped me in putting together the slides.
 
 ## [Registration](https://www.eventbrite.com/e/android-stream-day-season-1-tickets-112068517954)
+
+## [Schedule and further deatils](http://stream.mtechviral.com/)
+
+## [Tweet 1](https://twitter.com/imthepk/status/1291651271506587648?s=20)
+
+## [Tweet 2](https://twitter.com/rishit_dagli/status/1291813949214789632?s=20)
