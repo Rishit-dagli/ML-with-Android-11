@@ -18,3 +18,5 @@ Special thanks to-
 * [@khanhlvg](https://github.com/khanhlvg)(Google)
 
 who helped me in putting together the slides.
+
+## [Registration](https://www.eventbrite.com/e/android-stream-day-season-1-tickets-112068517954)
