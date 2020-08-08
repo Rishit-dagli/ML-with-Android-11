@@ -9,8 +9,8 @@
 |![Build ML-Example-App](https://github.com/Rishit-dagli/Android-Stream-Day-2020/workflows/Build%20ML-Example-App/badge.svg)|![Build MLKitCustom](https://github.com/Rishit-dagli/Android-Stream-Day-2020/workflows/Build%20MLKitCustom/badge.svg)|
 |---|---|
 
-My session at Android Stream Day about Superpower your Android Apps with ML, 8-9 August 2020. Special thanks to [@iampawan](https://github.com/iampawan) and 
-[@RivuChk](https://github.com/RivuChk) for hosting me.
+My session at [Android Stream Day](https://www.eventbrite.com/e/android-stream-day-season-1-tickets-112068517954) about Superpower your Android Apps with ML, 8-9 August 2020.
+Special thanks to [@iampawan](https://github.com/iampawan) and [@RivuChk](https://github.com/RivuChk) for hosting me.
 
 Special thanks to-
 
