@@ -1,4 +1,4 @@
-# Machine Learning in Android 11
+# Machine Learning with Android 11
 
 ![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)
