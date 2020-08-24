@@ -35,6 +35,14 @@ You can know more or watch the talks I gave on this topic -
   * [What does the new ML Kit focus on?](#what-does-the-new-ml-kit-focus-on-)
   * [Using the ML Kit](#using-the-ml-kit)
 - [Finding Models](#finding-models)
+- [Wish to contribute to this repository? :sparkles:](#wish-to-contribute-to-this-repository---sparkles-)
+  * [1. Fork this repository :fork_and_knife:](#1-fork-this-repository--fork-and-knife-)
+  * [2. Clone this repository :busts_in_silhouette:](#2-clone-this-repository--busts-in-silhouette-)
+  * [3. Set it up :wrench:](#3-set-it-up--wrench-)
+  * [4. Ready, Set, Go!!! :turtle::rabbit2:](#4-ready--set--go-----turtle--rabbit2-)
+  * [5. Create a new branch :bangbang:](#5-create-a-new-branch--bangbang-)
+  * [6. Push your awesome work to your remote repository :rocket:](#6-push-your-awesome-work-to-your-remote-repository--rocket-)
+  * [7. Finally, make a PR! :fire:](#7-finally--make-a-pr---fire-)
 
 ## Why care about on-device ML in Android?
 
@@ -309,3 +317,86 @@ And many more! There are a lot of services like
 [Teachable Machine](https://teachablemachine.withgoogle.com/), 
 [AutoML](https://cloud.google.com/automl) and many more but these are the major
 ones.
+## Wish to contribute to this repository? :sparkles:
+
+Do you notice a bug or want to add a feature, you can very easily contribute to 
+this repo. I also advise you to take a look at 
+[CODE OF CONDUCT](https://github.com/Rishit-dagli/ML-with-Android-11/blob/master/CODE_OF_CONDUCT.md) 
+. Here are the steps to help you along :scroll:
+
+### 1. Fork this repository :fork_and_knife:
+
+You can get your own fork/copy of 
+[ML with Android 11](https://github.com/Rishit-dagli/ML-with-Android-11) by 
+using the <a href="https://github.com/Rishit-dagli/ML-with-Android-11/new/master?readme=1#fork-destination-box"><kbd><b>Fork</b></kbd></a> 
+button or clicking [here](https://github.com/Rishit-dagli/ML-with-Android-11/new/master?readme=1#fork-destination-box).
+[![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/CoderJolly/IPU-Engineering-Notes)
+ 
+### 2. Clone this repository :busts_in_silhouette:
+
+You need to clone (download a copy of) this repository to your local machine using:
+```sh
+$ git clone https://github.com/Your_Username/ML-with-Android-11.git
+```
+> This makes a local copy of repository in your machine.
+Once you have cloned the `ML-with-Android-11` repository in GitHub, move to that folder first using change directory command on linux and Mac.
+```sh
+# This will change directory to a folder ML-with-Android-11
+$ cd ML-with-Android-11
+```
+Move to this folder for all other commands.
+
+### 3. Set it up :wrench:
+Run the following commands to see that *your local copy* has a reference to *your forked remote repository* in GitHub :octocat:
+```sh
+$ git remote -v
+origin  https://github.com/Your_Username/ML-with-Android-11.git (fetch)
+origin  https://github.com/Your_Username/ML-with-Android-11.git (push)
+```
+Now, lets add a reference to the original [ML-with-Android-11](https://github.com/Rishit-dagli/ML-with-Android-11) repository using
+```sh
+$ git remote add upstream https://github.com/Rishit-dagli/ML-with-Android-11.git
+```
+> This adds a new remote named ***upstream***.
+See the changes using
+```sh
+$ git remote -v
+origin    https://github.com/Your_Username/ML-with-Android-11.git (fetch)
+origin    https://github.com/Your_Username/ML-with-Android-11.git (push)
+upstream  https://github.com/Rishit-dagli/ML-with-Android-11.git (fetch)
+upstream  https://github.com/Rishit-dagli/ML-with-Android-11.git (push)
+```
+
+### 4. Ready, Set, Go!!! :turtle::rabbit2:
+Once you have completed these steps, you are ready to start contributing by checking our `Help Wanted` Issues and creating [pull requests](https://github.com/Rishit-dagli/ML-with-Android-11.git/pulls).
+
+### 5. Create a new branch :bangbang:
+Whenever you are going to make contribution. Please create separate branch using command and keep your `master` branch clean (i.e. synced with remote branch).
+```sh
+# It will create a new branch with name Branch_Name and switch to branch Folder_Name
+$ git checkout -b Folder_Name
+```
+Create a separate branch for contribution and try to use same name of branch as of folder.
+To switch to desired branch
+```sh
+# To switch from one folder to other
+$ git checkout Folder_Name
+```
+To add the changes to the branch. Use
+```sh
+# To add all files to branch Folder_Name
+$ git add .
+```
+Type in a message relevant for the code reviewer using
+```sh
+# This message get associated with all files you have changed
+$ git commit -m 'relevant message'
+```
+### 6. Push your awesome work to your remote repository :rocket:
+```sh
+# To push your work to your remote repository
+$ git push -u origin Folder_Name
+```
+### 7. Finally, make a PR! :fire:
+Go to your repository in browser and click on `compare and pull requests`.
+Then add a title and description to your pull request that explains your precious effort.
