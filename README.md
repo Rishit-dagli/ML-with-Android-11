@@ -265,3 +265,31 @@ similar to the previous example here. I will process my image and a thing to
 note here is all of these listeners that is on failure or on success are 
 essentially tasks so they need to be attached for every run. 
 And that is all you need to do, we are done :rocket:
+
+## Finding Models
+
+We talked a lot about what after making a model let us take a look at how you 
+can find models for your use-cases.
+
+- TF Lite Model Maker
+
+TF Lite Model Maker too was announced by The TensorFlow Team earlier in 2020. 
+This makes making good models super easy to use, gives a high performance and 
+also allows for a good amount of customization. You can simply pass in the data
+and use little code to build a `tflite` model. You can take a look at the 
+[TensorFlow Lite Model Maker Example](https://github.com/Rishit-dagli/Android-Stream-Day-2020/blob/dev/TensorFlow_Lite_Model_Maker_example.ipynb) 
+present in this repo.
+
+- TensorFlow Hub
+
+TensorFlow Hub is an open-source repository of state of the art and well 
+docuemnted, models. The food classification app we built with ML Kit is also 
+present on TF Hub. You get to use models from the community. You can find these 
+at [tfhub.dev](https//tfhub.dev).
+
+![](images/tf-hub.png)
+
+And many more! There are a lot of services like 
+[Teachable Machine](https://teachablemachine.withgoogle.com/), 
+[AutoML](https://cloud.google.com/automl) and many more but these are the major
+ones.
