@@ -35,14 +35,14 @@ You can know more or watch the talks I gave on this topic -
   * [What does the new ML Kit focus on?](#what-does-the-new-ml-kit-focus-on-)
   * [Using the ML Kit](#using-the-ml-kit)
 - [Finding Models](#finding-models)
-- [Wish to contribute to this repository? :sparkles:](#wish-to-contribute-to-this-repository---sparkles-)
-  * [1. Fork this repository :fork_and_knife:](#1-fork-this-repository--fork-and-knife-)
-  * [2. Clone this repository :busts_in_silhouette:](#2-clone-this-repository--busts-in-silhouette-)
-  * [3. Set it up :wrench:](#3-set-it-up--wrench-)
-  * [4. Ready, Set, Go!!! :turtle::rabbit2:](#4-ready--set--go-----turtle--rabbit2-)
-  * [5. Create a new branch :bangbang:](#5-create-a-new-branch--bangbang-)
-  * [6. Push your awesome work to your remote repository :rocket:](#6-push-your-awesome-work-to-your-remote-repository--rocket-)
-  * [7. Finally, make a PR! :fire:](#7-finally--make-a-pr---fire-)
+- [Wish to contribute to this repository? :sparkles:](#wish-to-contribute-to-this-repository-sparkles)
+  * [1. Fork this repository :fork_and_knife:](#1-fork-this-repository-fork_and_knife)
+  * [2. Clone this repository :busts_in_silhouette:](#2-clone-this-repository-busts_in_silhouette)
+  * [3. Set it up :wrench:](#3-set-it-up-wrench)
+  * [4. Ready, Set, Go!!! :turtle::rabbit2:](#4-ready-set-go-turtlerabbit2)
+  * [5. Create a new branch :bangbang:](#5-create-a-new-branch-bangbang)
+  * [6. Push your awesome work to your remote repository :rocket:](#6-push-your-awesome-work-to-your-remote-repository-rocket)
+  * [7. Finally, make a PR! :fire:](#7-finally-make-a-pr-fire)
 
 ## Why care about on-device ML in Android?
 
