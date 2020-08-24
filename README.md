@@ -134,3 +134,69 @@ you just show your hand in front of the camera and it identifies if it's a rock
 paper or scissor, and that's what I demonstrate here too.
 
 ![](images/model-metadata.jpg)
+
+#### Using the TF Lite Model
+
+Let’s finally start using the model, so for a streaming inference which is most
+probably what you would want to do; live image classification. The easiest way 
+would be to use Camera X and pass each frame to a function which can perform the
+inference. So what I’m interested as of now is the function which does the 
+inference. You will see how easy it is do this, a sample code for this is also 
+seem when you import a TF Lite Model which you can use.
+
+```kotlin
+private val rpsModel = RPSModel.newInstance(ctx)
+```
+
+So we’ll start by instantiating a `rps` model short for a rock papers scissors 
+model and pass it the context. With the plugin, my model name was 
+`RPS Model.tflite` so a class of the exact same name would be made for you so I 
+have a class called `RPS Model`.
+
+```kotlin
+val tfImage = TensorImage.fromBitmap(toBitmap(imageProxy))
+```
+
+Once you do this you need to convert your data into a form which we can use so 
+we’ll convert it to a `Tensor Image` from `bitmap`, if you used the TF 
+Interpreter you know that you need to convert your image to a `ByteArray`, 
+you dont need to do that anymore and you’ll feed in an image proxy
+
+```kotlin
+val outputs = rpsModel.process(tfImage)
+    .probabilityAsCategoryList.apply {
+        sortByDescending { it.score } // Sort with highest confidence first
+    }.take(MAX_RESULT_DISPLAY) // take the top results
+```
+
+So now we will pass in the data to the model so first we will process the image 
+from the model and get the outputs we will essentially get an array of 
+probabilities and perform a descending sort on it as we want to show the label 
+which has most probability and then pick first `n` results to show.
+
+```kotlin
+for (output in outputs) {
+    items.add(
+        Recognition(
+            output.label,
+            output.score
+        )
+    )
+}
+```
+
+And finally I want to show users the labels so I will add the label 
+corresponding to each entry in the outputs. And that’s all you need :rocket:.
+
+### Leveraging GPU Acceleration
+
+If you want to use GPU acceleration again it is made very easy for you so you 
+will make an `options` object where I specify it to use GPU and build it. In 
+the instantiation part, I would just pass this in as an argument and you can use
+the GPU. It also makes it very easy to use the NN API for acceleration to do 
+even more and with Android 11.
+
+```kotlin
+private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
+private val rpsModel = rpsModel.newInstance(ctx, options)
+```
