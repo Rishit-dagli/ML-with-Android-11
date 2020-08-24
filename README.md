@@ -16,3 +16,6 @@ biggest updates:
 [ML Model Binding Plugin](https://android-developers.googleblog.com/2020/06/tools-for-custom-ML-models.html)
 and the [new ML Kit](https://android-developers.googleblog.com/2020/06/tools-for-custom-ML-models.html)
 .
+
+You can know more or watch the talks I gave on this topic - 
+[talks.md](https://github.com/Rishit-dagli/Android-Stream-Day-2020/blob/master/talks.md)
