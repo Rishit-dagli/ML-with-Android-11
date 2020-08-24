@@ -78,10 +78,10 @@ I no longer send data out of the device at all thus enforcing security.
 
 ## ML Model Binding Plugin
 
-### What is the Model Binding Plugin about?
+### What does Model Binding Plugin focus on?
 
-> Note: You need Android Studio 4.1 or aabove to be able to use 
-> the Model Binding Plugin
+> Note: You need Android Studio 4.1 or above to be able to use the Model 
+> Binding Plugin
 
 You can make a fair enough guess from the name “Model Building” so as to what 
 the [ML Model Binding Plugin](https://developer.android.com/studio/preview/features#tensor-flow-lite-models)
@@ -200,3 +200,68 @@ even more and with Android 11.
 private val options = Model.Options.Builder().setDevice(Model.Device.GPU).build()
 private val rpsModel = rpsModel.newInstance(ctx, options)
 ```
+
+## New ML Kit
+
+### What does the new ML Kit focus on?
+
+The other notable update Another way to implement a TensorFlow Lite model is 
+via [ML Kit](https://g.co/mlkit). And before I move on ML Kit is now available 
+even without having to use a Firebase project, you can now use ML Kit even 
+without a Firebase project.
+
+As I mentioned earlier a lot of updates in Android 11 are focused on on-device 
+ML due to the benefits I mentioned earlier. The new ML Kit now has better 
+usability for on-device ML. The ML Kit 
+[image classification](https://developers.google.com/ml-kit/vision/image-labeling/custom-models/android) 
+and 
+[object detection and tracking (ODT)](https://developers.google.com/ml-kit/vision/object-detection/custom-models/android) 
+now also support custom models, which means now you can also have a `tflite` 
+model file along with this. This also means if you are working on some generic 
+use case like a specific kind of object detection ML Kit is the best thing to 
+use.
+
+### Using the ML Kit
+
+Let's see this in code and see an example of this.
+So here as an example I build a model which can classify different food items, 
+
+```kotlin
+private localModel = LocalModel.Builder()
+    .setAssetFilePath("lite-model_aiy_vision_classifier_food_V1_1.tflite").
+    .build()
+```
+
+So I will first start off by setting the model and specifying the `tflite`
+model file path for it.
+
+```kotlin
+private val customObjectDetectorOptions = CustomObjectDetectorOptions
+    .Builder(localModel)
+    .setDetectorMode(CustomObjectDetectorOptions.STREAM_MODE) 
+    .setClassificationConfidenceThreshold(0.8f) 
+    .build()
+```
+
+This `tflite` model will then run on top of the Object detection model with ML 
+Kit so you can customize these options a bit. Here I have specifically used the 
+`STREAM_MODE` as I want to work with streaming input and also specify the 
+confidence threshold.
+
+```kotlin
+private val objectDetector = ObjectDetection.getClient(customObjectDetectorOptions) objectDetector.process(image) 
+    .addOnFailureListener(Log.d(...)) 
+    .addOnSuccessListener{ 
+        graphicsOverlay.clear() 
+        for (detectedObject in it){ 
+            graphicsOverlay.add(ObjectGraphic(graphicsOverlay, detectedObject))
+        } 
+        graphicsOverlay.postInvalidate()} 
+    .addOnCompleteListenerl imageProxy.close() } 
+```
+
+So let us get to the part where we run the model so you might see some syntax
+similar to the previous example here. I will process my image and a thing to 
+note here is all of these listeners that is on failure or on success are 
+essentially tasks so they need to be attached for every run. 
+And that is all you need to do, we are done :rocket:
