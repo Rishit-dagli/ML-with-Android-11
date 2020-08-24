@@ -2,9 +2,9 @@
 
 ![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FAndroid-Stream-Day-2020)
+![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FML-with-Android-11)
 
-|![Build ML-Example-App](https://github.com/Rishit-dagli/Android-Stream-Day-2020/workflows/Build%20ML-Example-App/badge.svg)|![Build MLKitCustom](https://github.com/Rishit-dagli/Android-Stream-Day-2020/workflows/Build%20MLKitCustom/badge.svg)|
+|![Build ML-Example-App](https://github.com/Rishit-dagli/ML-with-Android-11/workflows/Build%20ML-Example-App/badge.svg)|![Build MLKitCustom](https://github.com/Rishit-dagli/ML-with-Android-11/workflows/Build%20MLKitCustom/badge.svg)|
 |---|---|
 
 This repository demonstrates how you can get started with on-device ML with 
@@ -18,7 +18,7 @@ and the [new ML Kit](https://android-developers.googleblog.com/2020/06/tools-for
 .
 
 You can know more or watch the talks I gave on this topic - 
-[talks.md](https://github.com/Rishit-dagli/Android-Stream-Day-2020/blob/master/talks.md)
+[talks.md](https://github.com/Rishit-dagli/ML-with-Android-11/blob/master/talks.md)
 
 ## Table of Contents
 
@@ -293,7 +293,7 @@ TF Lite Model Maker too was announced by The TensorFlow Team earlier in 2020.
 This makes making good models super easy to use, gives a high performance and 
 also allows for a good amount of customization. You can simply pass in the data
 and use little code to build a `tflite` model. You can take a look at the 
-[TensorFlow Lite Model Maker Example](https://github.com/Rishit-dagli/Android-Stream-Day-2020/blob/dev/TensorFlow_Lite_Model_Maker_example.ipynb) 
+[TensorFlow Lite Model Maker Example](https://github.com/Rishit-dagli/ML-with-Android-11/blob/dev/TensorFlow_Lite_Model_Maker_example.ipynb) 
 present in this repo.
 
 - TensorFlow Hub
