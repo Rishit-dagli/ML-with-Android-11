@@ -36,7 +36,7 @@ image as an example if the image contains cat or dog, you would no longer send
 the data here the image to a server. You would instead do the inference on the 
 data on the device itself, do all the computation on the device itself.
 
-![](images/on-evice-ml-idea.jpg)
+![](images/on-device-ml-idea.jpg)
 
 You would not directly use the model for your edge device. You would need to 
 compress it or optimize the model so you can run it on the edge device as it 
