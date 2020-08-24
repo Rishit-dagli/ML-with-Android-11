@@ -6,6 +6,7 @@
 
 |![Build ML-Example-App](https://github.com/Rishit-dagli/ML-with-Android-11/workflows/Build%20ML-Example-App/badge.svg)|![Build MLKitCustom](https://github.com/Rishit-dagli/ML-with-Android-11/workflows/Build%20MLKitCustom/badge.svg)|
 |---|---|
+|Camera based Rock, Paper, Scissor Classifier|Camera based OCR and Vision models|
 
 This repository demonstrates how you can get started with on-device ML with 
 tools or plugins specifically launched with 
