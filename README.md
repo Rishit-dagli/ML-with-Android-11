@@ -46,3 +46,32 @@ will be deploying a `.tflite` model file. You can read more about
 [TensorFlow Lite](https://www.tensorflow.org/lite/) and the 
 [Model Optimization process](https://www.tensorflow.org/lite/performance/model_optimization)
 with TensorFlow Lite.
+
+### Advantages of on-device ML
+
+Here I have listed some advantages of using on-device ML:
+
+- Power consumption
+
+So the first thing that would come to your mind is power consumption, you spend 
+a lot of power sending or streaming video data continuously to a server and 
+sometimes it becomes infeasible to do so. However, also worth a mention 
+sometimes the opposite could also be true when you employ heavy pre-processing.
+
+- Inference time
+
+Another important thing to consider is the time it takes me get the output or
+essentially run the model. For real time applications this is a pretty important
+aspect to consider. Without sending the data and the having to receive it back 
+I speed up my inference time too.
+
+- Network availability 
+
+Using the traditional approach is also expensive in terms of network 
+availability. I should have the bandwidth or network to continuously send the 
+data and receive inferences from the server. 
+
+- Security 
+
+And finally security I no longer send data to a server or cloud based system, 
+I no longer send data out of the device at all thus enforcing security.
