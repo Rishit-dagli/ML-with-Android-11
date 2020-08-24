@@ -75,3 +75,62 @@ data and receive inferences from the server.
 
 And finally security I no longer send data to a server or cloud based system, 
 I no longer send data out of the device at all thus enforcing security.
+
+## ML Model Binding Plugin
+
+### What is the Model Binding Plugin about?
+
+> Note: You need Android Studio 4.1 or aabove to be able to use 
+> the Model Binding Plugin
+
+You can make a fair enough guess from the name “Model Building” so as to what 
+the [ML Model Binding Plugin](https://developer.android.com/studio/preview/features#tensor-flow-lite-models)
+would do allow us to use custom TF Lite Models 
+very easily. This lets developers import any TFLite model, read the input / 
+output signature of the model, and use it with just a few lines of code that 
+calls the open source TensorFlow Lite Android Support Library.
+
+The ML model binding plugin makes it super easy for you to use a TF model in 
+your app. You essentially have a lot less code to write that calls the 
+TensorFlow Lite Android Support Library. If you have worked with TensorFlow 
+Lite models you maybe know that you first need to convert everything to a 
+`ByteArray` you no longer have to convert everything to `ByteArray` anymore with
+ML Model Binding Plugin.
+
+What I also love about this new plugin is you can easily use make use of GPUs 
+and the NN API very easily. With the model binding plugin using them has never 
+been easier. Using them is now just a dependency call and a single line of code
+away, isn’t that cool what you can do with Model Binding plugin. With Android 11
+The Neural Network API you also have unsigned integer weight support and a new 
+Quality of Service (QOS) API too supporting even more edge scenarios. And Of 
+course this would make your development a lot more faster with the features we 
+just talked about.
+
+### Using the Model Binding Plugin
+
+Let us now see how we can implement all what we talked about.
+
+#### Import a TF Lite Model
+
+So the first step is to import a TensorFlow Lite model with metadata. 
+Android Studio now has a new option for importing TensorFlow model, 
+just right click on the module you want to import it in and you will see an 
+option under `others` called `TF Lite model`. 
+
+![](images/import-model-opt.jpg)
+
+You can now just pass in path of your `tflite` model, it will import the model 
+for you in a directory in the module you selected earlier called `ml` from where
+you will be able to use the model. Adding the dependencies and GPU acceleration 
+too is just a click away.
+
+![](images/import-model-dialog-box.jpg)
+
+So now from my model metadata I can also know the input, output shapes and a 
+lot more that I would need to use it, you can see this info by opening the 
+`tflite` model file in Android Studio. So in this screenshot I am using an 
+open-source model made by me to classify between rock, paper and scissors. So 
+you just show your hand in front of the camera and it identifies if it's a rock 
+paper or scissor, and that's what I demonstrate here too.
+
+![](images/model-metadata.jpg)
