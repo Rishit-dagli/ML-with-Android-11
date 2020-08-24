@@ -20,6 +20,22 @@ and the [new ML Kit](https://android-developers.googleblog.com/2020/06/tools-for
 You can know more or watch the talks I gave on this topic - 
 [talks.md](https://github.com/Rishit-dagli/Android-Stream-Day-2020/blob/master/talks.md)
 
+## Table of Contents
+
+- [Why care about on-device ML in Android?](#why-care-about-on-device-ml-in-android-)
+  * [The idea behind on-device ML](#the-idea-behind-on-device-ml)
+  * [Advantages of on-device ML](#advantages-of-on-device-ml)
+- [ML Model Binding Plugin](#ml-model-binding-plugin)
+  * [What does Model Binding Plugin focus on?](#what-does-model-binding-plugin-focus-on-)
+  * [Using the Model Binding Plugin](#using-the-model-binding-plugin)
+    + [Import a TF Lite Model](#import-a-tf-lite-model)
+    + [Using the TF Lite Model](#using-the-tf-lite-model)
+  * [Leveraging GPU Acceleration](#leveraging-gpu-acceleration)
+- [New ML Kit](#new-ml-kit)
+  * [What does the new ML Kit focus on?](#what-does-the-new-ml-kit-focus-on-)
+  * [Using the ML Kit](#using-the-ml-kit)
+- [Finding Models](#finding-models)
+
 ## Why care about on-device ML in Android?
 
 As you might have noticed we majorly focus on on-device ML here, Android 11 has 
