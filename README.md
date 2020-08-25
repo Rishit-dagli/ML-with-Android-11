@@ -14,8 +14,8 @@ tools or plugins specifically launched with
 ML in Android, you will explore easier ways to integrate your ML applications 
 with your Android apps. In this repository I majorly demonstrate the two 
 biggest updates: 
-[ML Model Binding Plugin](https://android-developers.googleblog.com/2020/06/tools-for-custom-ML-models.html)
-and the [new ML Kit](https://android-developers.googleblog.com/2020/06/tools-for-custom-ML-models.html)
+[ML Model Binding Plugin](https://developer.android.com/studio/preview/features#tensor-flow-lite-models)
+and the [new ML Kit](https://g.co/mlkit)
 .
 
 You can know more or watch the talks I gave on this topic - 
