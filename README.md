@@ -21,7 +21,7 @@ and the [new ML Kit](https://g.co/mlkit)
 I would also urge you to check out the 
 [blog by me](https://medium.com/@rishit.dagli/machine-learning-with-android-11-whats-new-e8c829e9452) 
 on this topic.
-.You can know more or watch the talks I gave on this topic - 
+You can know more or watch the talks I gave on this topic - 
 [talks.md](https://github.com/Rishit-dagli/ML-with-Android-11/blob/master/talks.md)
 
 ## Table of Contents
