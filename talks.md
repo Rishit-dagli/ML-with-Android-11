@@ -4,6 +4,7 @@ Special thanks to-
 
 * [@sayakpaul](https://github.com/sayakpaul) (ML GDE)
 * [@khanhlvg](https://github.com/khanhlvg) (Google)
+* [@hoitab](https://github.com/hoitab) (Google)
 
 who helped me in putting together and reviewing the slides for the talks.
 
