@@ -23,3 +23,16 @@ Special thanks to [@iampawan](https://github.com/iampawan) and
 ### [Tweet 1](https://twitter.com/imthepk/status/1291651271506587648?s=20)
 
 ### [Tweet 2](https://twitter.com/rishit_dagli/status/1291813949214789632?s=20)
+
+## Microsft Student Inspir
+
+My session at [Microsft student Inspir](https://www.meetup.com/mspinspire/events/272874554/) about Superpower your Android 
+Apps with ML, 29 August 2020.
+Special thanks to [@salmanmkc](https://github.com/salmanmkc), 
+[@dawoodiddris](https://github.com/dawoodiddris),
+[@sundereshwar](https://github.com/sundereshwar) and
+[@Sabihashaik](https://github.com/Sabihashaik)
+
+![](images/ms-inspir.JPG)
+
+### [Registration](https://www.meetup.com/mspinspire/events/272874554/)
