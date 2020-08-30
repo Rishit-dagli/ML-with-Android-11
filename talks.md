@@ -37,3 +37,5 @@ Special thanks to [@salmanmkc](https://github.com/salmanmkc),
 ![](images/ms-inspir.JPG)
 
 ### [Registration](https://www.meetup.com/mspinspire/events/272874554/)
+
+### [Recording](https://www.youtube.com/watch?v=fN-lCW9fHsE)
