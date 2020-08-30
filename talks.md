@@ -32,7 +32,7 @@ Apps with ML, 29 August 2020.
 Special thanks to [@salmanmkc](https://github.com/salmanmkc), 
 [@dawoodiddris](https://github.com/dawoodiddris),
 [@sundereshwar](https://github.com/sundereshwar) and
-[@Sabihashaik](https://github.com/Sabihashaik)
+[@Sabihashaik](https://github.com/Sabihashaik) for hosting me.
 
 ![](images/ms-inspir.JPG)
 
