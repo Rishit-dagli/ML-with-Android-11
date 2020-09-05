@@ -333,7 +333,7 @@ You can get your own fork/copy of
 [ML with Android 11](https://github.com/Rishit-dagli/ML-with-Android-11) by 
 using the <a href="https://github.com/Rishit-dagli/ML-with-Android-11/new/master?readme=1#fork-destination-box"><kbd><b>Fork</b></kbd></a> 
 button or clicking [here](https://github.com/Rishit-dagli/ML-with-Android-11/new/master?readme=1#fork-destination-box).
-[![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/CoderJolly/IPU-Engineering-Notes)
+[![Fork Button](https://help.github.com/assets/images/help/repository/fork_button.jpg)](https://github.com/CoderJolly/IPU-Engineering-Notes) [![Join the chat at https://gitter.im/ML-with-Android-11/ML-with-Android11](https://badges.gitter.im/ML-with-Android-11/ML-with-Android11.svg)](https://gitter.im/ML-with-Android-11/ML-with-Android11?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
  
 ### 2. Clone this repository :busts_in_silhouette:
 
