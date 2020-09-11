@@ -18,7 +18,7 @@ biggest updates:
 and the [new ML Kit](https://g.co/mlkit)
 .
 
-I would also urge you to check out the 
+I would also urge you to check out this 
 [blog by me](https://medium.com/@rishit.dagli/machine-learning-with-android-11-whats-new-e8c829e9452) 
 on this topic.
 You can know more or watch the talks I gave on this topic - 
