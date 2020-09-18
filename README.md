@@ -1,7 +1,7 @@
 # Machine Learning with Android 11 ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FML-with-Android-11)
 
 [![Join the chat at https://gitter.im/ML-with-Android-11/ML-with-Android11](https://badges.gitter.im/ML-with-Android-11/ML-with-Android11.svg)](https://gitter.im/ML-with-Android-11/ML-with-Android11?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)
+[![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)](https://github.com/Rishit-dagli)
 [![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)](https://twitter.com/intent/follow?screen_name=rishit_dagli)
 
 |![Build ML-Example-App](https://github.com/Rishit-dagli/ML-with-Android-11/workflows/Build%20ML-Example-App/badge.svg)|![Build MLKitCustom](https://github.com/Rishit-dagli/ML-with-Android-11/workflows/Build%20MLKitCustom/badge.svg)|
