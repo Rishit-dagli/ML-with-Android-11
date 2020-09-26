@@ -39,3 +39,13 @@ Special thanks to [@salmanmkc](https://github.com/salmanmkc),
 ### [Registration](https://www.meetup.com/mspinspire/events/272874554/)
 
 ### [Recording](https://www.youtube.com/watch?v=fN-lCW9fHsE)
+
+## GDG Boston
+
+My session at [Google Developers Group Boston](https://www.meetup.com/boston-android/) about Superpower your Android 
+Apps with ML, 29 August 2020.
+Special thanks to [@emezias](https://github.com/emezias) for hosting me.
+
+![](images/gdg-boston.jpeg)
+
+### [Registration](https://www.meetup.com/boston-android/events/273052464/)
