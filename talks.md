@@ -44,7 +44,8 @@ Special thanks to [@salmanmkc](https://github.com/salmanmkc),
 
 My session at [Google Developers Group Boston](https://www.meetup.com/boston-android/) about Superpower your Android 
 Apps with ML, 29 August 2020.
-Special thanks to [@emezias](https://github.com/emezias) for hosting me.
+Special thanks to [@emezias](https://github.com/emezias) and
+[@ahsrav](https://github.com/ahsrav) for hosting me.
 
 ![](images/gdg-boston.jpeg)
 
