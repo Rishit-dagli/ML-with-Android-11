@@ -21,9 +21,8 @@ Special thanks to [@iampawan](https://github.com/iampawan) and
 
 ### [Schedule and further deatils](http://stream.mtechviral.com/)
 
-### [Tweet 1](https://twitter.com/imthepk/status/1291651271506587648?s=20)
-
-### [Tweet 2](https://twitter.com/rishit_dagli/status/1291813949214789632?s=20)
+[![Twitter URL](https://img.shields.io/twitter/url?label=Tweet%201&style=social&url=https%3A%2F%2Ftwitter.com)](https://twitter.com/imthepk/status/1291651271506587648?s=20)
+[![Twitter URL](https://img.shields.io/twitter/url?label=Tweet%202&style=social&url=https%3A%2F%2Ftwitter.com)](https://twitter.com/rishit_dagli/status/1291813949214789632?s=20)
 
 ## Microsft Student Inspir
 
