@@ -57,6 +57,10 @@ Special thanks to [@emezias](https://github.com/emezias) and
 
 ### [Announcement](https://devfestcarib.web.app/)
 
+### [Tweet 1](https://twitter.com/gdgpos/status/1317956352170430464?s=20)
+
+### [Tweet 2](https://twitter.com/gdgpos/status/1317956352170430464?s=20)
+
 ## DevFest Central Asia
 
 ### [Recording](https://youtu.be/CyPRxS419Fc?t=3751)
