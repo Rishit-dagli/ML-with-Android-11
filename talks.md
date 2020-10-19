@@ -50,3 +50,31 @@ Special thanks to [@emezias](https://github.com/emezias) and
 ![](images/gdg-boston.jpeg)
 
 ### [Registration](https://www.meetup.com/boston-android/events/273052464/)
+
+## DevFest Caribbean
+
+### [Recording](https://youtu.be/cAp81lVV6UE)
+
+### [Announcement](https://devfestcarib.web.app/)
+
+## DevFest Central Asia
+
+### [Recording](https://youtu.be/CyPRxS419Fc?t=3751)
+
+### [Announcement](https://gdg.community.dev/events/details/google-gdg-tashkent-presents-devfest-caucasus-central-asia-2020/)
+
+## DevFest Poland
+
+### [Recording](https://youtu.be/m1czoyVqb1U?t=25298)
+
+### [Announcement](https://www.google.com/url?q=https%3A%2F%2Fdevfest.pl%2F&sa=D&sntz=1&usg=AFQjCNHMre5QCBj4_xAo7hpgUolPHYt5jA)
+
+## DevFest Kuwait
+
+### [Recording](https://youtu.be/UZGpR3Pl2o8)
+
+### [Announcement](https://gdg.community.dev/events/details/google-gdg-kuwait-presents-devfest-kuwait-superpower-your-android-apps-with-ml/)
+
+## DevFest Bujumbura
+
+### [Announcement](https://gdg.community.dev/events/details/google-gdg-bujumbura-presents-gdg-bujumbura-devfest-2020/)
