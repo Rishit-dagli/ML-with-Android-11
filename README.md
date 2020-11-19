@@ -21,8 +21,9 @@ and the [new ML Kit](https://g.co/mlkit)
 I would also urge you to check out this 
 [blog by me](https://medium.com/@rishit.dagli/machine-learning-with-android-11-whats-new-e8c829e9452) 
 on this topic.
-You can know more or watch the talks I gave on this topic - 
-[talks.md](https://github.com/Rishit-dagli/ML-with-Android-11/blob/master/talks.md)
+You can know more or watch the talks I gave on this topic at 
+[talks.md](https://github.com/Rishit-dagli/ML-with-Android-11/blob/master/talks.md) and also take a look at the slides 
+[![Slides](images/speakerdeck_button.svg)](https://speakerdeck.com/rishitdagli/superpower-your-android-apps-with-ml-android-11-devfest-2020)
 
 ## Table of Contents
 
