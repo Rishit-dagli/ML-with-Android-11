@@ -23,7 +23,7 @@ I would also urge you to check out this
 on this topic.
 You can know more or watch the talks I gave on this topic at 
 [talks.md](https://github.com/Rishit-dagli/ML-with-Android-11/blob/master/talks.md) and also take a look at the slides 
-<a href="https://speakerdeck.com/rishitdagli/superpower-your-android-apps-with-ml-android-11-devfest-2020"><img src="images/speakerdeck_button.svg" height="20"></a>
+<a href="http://bit.ly/dc-apac-slides"><img src="images/speakerdeck_button.svg" height="20"></a>
 .
 
 ## Table of Contents
